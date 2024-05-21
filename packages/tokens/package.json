@@ -2,7 +2,9 @@
   "name": "@robsonshockwave/tokens",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsup src/index.ts --format esm,cjs --dts",
@@ -10,8 +12,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
+    "@robsonshockwave/ts-config": "*",
     "tsup": "^8.0.2",
     "typescript": "^5.4.5"
   }
