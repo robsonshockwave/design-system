@@ -1,8 +1,8 @@
 import {
   colors,
+  fonts,
   fontSizes,
   fontWeights,
-  fonts,
   lineHeights,
   radii,
   space,
@@ -24,13 +24,14 @@ export const {
     height: 'space',
     width: 'space',
   },
+
   theme: {
-    colors: colors,
-    fontSizes: fontSizes,
-    fontWeights: fontWeights,
-    fonts: fonts,
-    lineHeights: lineHeights,
-    radii: radii,
-    space: space,
+    colors,
+    fonts,
+    fontSizes,
+    fontWeights,
+    lineHeights,
+    radii,
+    space,
   },
 });
