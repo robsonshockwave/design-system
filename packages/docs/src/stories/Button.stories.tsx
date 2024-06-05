@@ -1,11 +1,19 @@
-import { Button } from '@robsonshockwave/react/src';
+import { Button, ButtonProps } from '@robsonshockwave/react/src';
 import { Meta, StoryObj } from '@storybook/react';
-
-// const Button = () => <button>Click me</button>;
 
 export default {
   title: 'Button',
   component: Button,
+
+  args: {
+    children: 'Enviar',
+  },
 } as Meta;
 
-export const Primary: StoryObj = {};
+export const Primary: StoryObj<ButtonProps> = {};
+
+export const Big: StoryObj<ButtonProps> = {
+  args: {
+    size: 'big',
+  },
+};
