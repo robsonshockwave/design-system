@@ -2,7 +2,7 @@ import { Button, ButtonProps } from '@robsonshockwave/react/src';
 import { Meta, StoryObj } from '@storybook/react';
 
 export default {
-  title: 'Button',
+  title: 'Form/Button',
   component: Button,
 
   args: {
