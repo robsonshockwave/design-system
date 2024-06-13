@@ -12,6 +12,6 @@ export default {
       </>
     ),
   },
-} as Meta;
+} as Meta<BoxProps>;
 
 export const Primary: StoryObj<BoxProps> = {};
