@@ -14,9 +14,6 @@ const config: StorybookConfig = {
     '../src/**/*.stories.@(js|jsx|mjs|ts|tsx)',
     '../src/pages/**/*.@(mdx)',
   ],
-  core: {
-    builder: '@storybook/builder-vite', // 👈 The builder enabled here.
-  },
   addons: [
     getAbsolutePath('@storybook/addon-onboarding'),
     getAbsolutePath('@storybook/addon-links'),
