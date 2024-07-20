@@ -14,6 +14,9 @@ const config: StorybookConfig = {
     '../src/**/*.stories.@(js|jsx|mjs|ts|tsx)',
     '../src/pages/**/*.@(mdx)',
   ],
+  core: {
+    builder: '@storybook/builder-vite', // 👈 The builder enabled here.
+  },
   addons: [
     getAbsolutePath('@storybook/addon-onboarding'),
     getAbsolutePath('@storybook/addon-links'),
@@ -26,7 +29,7 @@ const config: StorybookConfig = {
     name: getAbsolutePath('@storybook/react-vite'),
     options: {},
   },
-  viteFinal: (config, { configType }) => {
+  viteFinal: async (config, { configType }) => {
     if (configType === 'PRODUCTION') {
       config.base = '/design-system/';
     }
